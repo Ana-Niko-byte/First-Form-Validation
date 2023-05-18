@@ -1,0 +1,17 @@
+@mixin fullflex($flow){
+    display: flex;
+    flex-flow: $flow;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin unalignedflex($flow){
+    display: flex;
+    flex-flow: $flow;
+}
+
+@mixin grid($rows, $columns){
+    display: grid;
+    grid-template: $rows/ $columns;
+}
+

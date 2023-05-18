@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+body {
+  background-color: hsl(217, 28%, 15%);
+  background-image: url("../images/bg-curvy-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 520px;
+}
+
+nav {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 330px;
+  margin-right: 1.5rem;
+}
+nav ul a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+nav ul li {
+  padding: 1.2rem;
+  min-width: 50px;
+}
+nav a:visited {
+  color: rgb(153, 153, 229);
+}
+nav a:hover {
+  color: hsl(176, 68%, 64%);
+}
+nav a:active {
+  color: hsl(0, 0%, 100%);
+  transition: 0.4sec;
+}
+
+.logo {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.logo img {
+  width: 40%;
+  margin-top: 3rem;
+}
+.logo h1, .logo h3 {
+  padding: 1rem;
+  color: hsl(0, 0%, 100%);
+  font-family: "Open Sans", sans-serif;
+}
+.logo h1 {
+  font-weight: 700;
+  font-size: 22px;
+  width: 400px;
+}
+.logo h3 {
+  font-weight: 400;
+  font-size: 12px;
+  width: 360px;
+  line-height: 20px;
+}
+
+button {
+  color: hsl(0, 0%, 100%);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  width: 300px;
+  height: 50px;
+  background-color: hsl(198, 60%, 50%);
+  border-radius: 30px;
+  border: 2px solid hsl(198, 60%, 50%);
+  margin: 4rem auto;
+}
+button button:hover {
+  background-color: hsl(176, 68%, 64%);
+}
+
+.features {
+  background-color: hsl(218, 28%, 13%);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.features .container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.features .container .access, .features .container .security, .features .container .collaborate, .features .container .storage {
+  max-width: 350px;
+  min-height: 150px;
+  margin: 1rem 4rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+.features .container .access img, .features .container .security img, .features .container .collaborate img, .features .container .storage img {
+  height: 100px;
+}
+.features .container .access h3, .features .container .access h4, .features .container .security h3, .features .container .security h4, .features .container .collaborate h3, .features .container .collaborate h4, .features .container .storage h3, .features .container .storage h4 {
+  margin-top: 0.8rem;
+  color: hsl(0, 0%, 100%);
+  font-family: "Open Sans", sans-serif;
+}
+.features .container .access h3, .features .container .security h3, .features .container .collaborate h3, .features .container .storage h3 {
+  font-weight: 700;
+  font-size: 18px;
+}
+.features .container .access h4, .features .container .security h4, .features .container .collaborate h4, .features .container .storage h4 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.productive {
+  background-color: hsl(218, 28%, 13%);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+.productive img.main-2 {
+  width: 35%;
+}
+.productive .wording {
+  max-width: 400px;
+  padding: 30px;
+}
+.productive .wording h2, .productive .wording h4 {
+  padding: 1rem;
+  color: hsl(0, 0%, 100%);
+  font-family: "Open Sans", sans-serif;
+}
+.productive .wording h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.productive .wording h4 {
+  font-size: 12px;
+  line-height: 20px;
+  max-width: 300px;
+  margin: auto;
+  font-weight: 400;
+}
+.productive .wording .works a {
+  width: 80px;
+  color: hsl(176, 68%, 64%);
+  padding: 10px;
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+  margin: auto;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+.productive .wording .works a img {
+  position: relative;
+  top: 4px;
+  left: 4px;
+}
+
+.review-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(218, 28%, 13%);
+  padding-top: 100px;
+}
+.review-container .review, .review-container .review1 {
+  width: 350px;
+  background-color: hsl(219, 30%, 18%);
+  margin-right: 2rem;
+  margin-left: 2rem;
+  border-radius: 15px;
+}
+.review-container .review {
+  margin-bottom: 2.6rem;
+}
+.review-container p {
+  color: hsl(0, 0%, 100%);
+  font-size: 13px;
+  font-family: "Raleway", sans-serif;
+  line-height: 20px;
+  margin-top: 15px;
+  padding: 20px;
+}
+.review-container .person {
+  display: flex;
+  flex-flow: row wrap;
+}
+.review-container .person .wordsperson {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+.review-container .person .wordsperson h5, .review-container .person .wordsperson h6 {
+  color: hsl(0, 0%, 100%);
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+}
+.review-container .person img {
+  height: 30px;
+  border-radius: 50%;
+  padding: 20px;
+}
+.review-container .review1 {
+  position: relative;
+  top: -38px;
+}
+
+.quote-flex {
+  display: flex;
+  flex-flow: row wrap;
+  width: 400px;
+}
+.quote-flex img.quotes {
+  position: relative;
+  top: -10px;
+  z-index: -1;
+}
+
+.email {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 28%, 15%);
+  margin: 0 auto;
+  min-height: 150px;
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 45px;
+  position: relative;
+  top: 50px;
+}
+
+h3, h4 {
+  color: hsl(0, 0%, 100%);
+  font-family: "Raleway", sans-serif;
+  padding: 10px;
+}
+
+h4 {
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 1rem;
+}
+
+.input {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.input input {
+  width: 250px;
+  border-radius: 30px;
+  background-color: hsl(0, 0%, 100%);
+  border: 3px solid hsl(0, 0%, 100%);
+  padding: 15px;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+}
+.input button.free {
+  width: 290px;
+  color: hsl(0, 0%, 100%);
+  padding: 15px;
+}
+.input input, .input button.free {
+  margin: 1rem 2rem;
+}
+
+.ending {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  background-color: hsl(216, 53%, 9%);
+  padding: 5rem;
+}
+.ending .lorem {
+  width: 450px;
+}
+.ending .lorem .locationwords {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.ending .lorem .locationwords img {
+  height: 20px;
+  position: relative;
+  top: 30px;
+  padding: 10px;
+}
+.ending h2, .ending h5 {
+  color: hsl(0, 0%, 100%);
+  font-family: "Raleway", sans-serif;
+  padding: 10px;
+  font-weight: 400;
+}
+.ending h6 {
+  font-size: 12px;
+  color: hsl(0, 0%, 100%);
+  font-family: "Raleway", sans-serif;
+  padding: 5px;
+  font-weight: 400;
+}
+.ending h5 {
+  font-size: 14px;
+}
+.ending h2 {
+  margin-top: 1rem;
+  font-size: 14px;
+  line-height: 20px;
+}
+.ending .socials img {
+  height: 20px;
+  width: 20px;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+@media all and (max-width: 800px) {
+  .phone, .contact, .fours, .termsies {
+    width: 400px;
+    margin: 1rem;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 900px) {
+  .phone, .contact, .fours, .termsies, .socials {
+    width: 500px;
+    margin: 1rem;
+  }
+}
+.attribution {
+  color: hsl(0, 0%, 100%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  margin: 1rem auto;
+}
+.attribution a {
+  color: hsl(176, 68%, 64%);
+}
+
+#emailLabel {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#emailLabel #emailError {
+  color: hsl(0, 100%, 63%);
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  position: relative;
+  top: -5px;
+}
+
+button:hover {
+  background-color: hsl(217, 28%, 15%);
+}
+
+button:active {
+  background-color: hsl(216, 53%, 9%);
+}
+
+#emailError {
+  color: red;
+  position: relative;
+  left: 50px;
+}
+
+#form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+  height: 100px;
+  position: relative;
+  top: 10px;
+}
+
+.wripwrap {
+  background-color: hsl(218, 28%, 13%);
+}/*# sourceMappingURL=styles.css.map */
